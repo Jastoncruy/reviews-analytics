@@ -14,3 +14,9 @@ for L in data:
 	a = sum_len / len(data)
 print('每一行的平均长度为',a)
 
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '行的文本数据小于100')
+print(new[0])
